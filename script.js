@@ -54,12 +54,9 @@ function replaceAct() {
 function editText() {
    switch(this.parentNode.parentNode.getAttribute("edit")) {
       case "nope":
-         console.log(this.parentNode.querySelector(".btnAct").hasAttribute("hidden"));
-         if(true) {
-            this.parentNode.parentNode.setAttribute("edit", "yeap");
-            this.parentNode.parentNode.querySelector(".textTask").removeAttribute("readonly");
-            this.parentNode.parentNode.style.borderColor = "#fff";
-         }
+         this.parentNode.parentNode.setAttribute("edit", "yeap");
+         this.parentNode.parentNode.querySelector(".textTask").removeAttribute("readonly");
+         this.parentNode.parentNode.style.borderColor = "#ffbe00";
          break;
       case "yeap":
          changeBorderColorAndBtn(this);
@@ -105,20 +102,22 @@ function changeBorderColorAndBtn(element) {
    switch(element.parentNode.parentNode.getAttribute("place")) {
       case "bon":
          element.parentNode.parentNode.style.borderColor = "#22d501";
-         element.setAttribute("hidden", "");
+         if(!element.classList.contains("btnEdit"))
+            element.setAttribute("hidden", "");
          element.parentNode.querySelector(".btnAct").removeAttribute("hidden");
          element.parentNode.querySelector(".btnSup").removeAttribute("hidden");
-
          break;
       case "ret":
          element.parentNode.parentNode.style.borderColor = "#ababab";
-         element.setAttribute("hidden", "");
+         if(!element.classList.contains("btnEdit"))
+            element.setAttribute("hidden", "");
          element.parentNode.querySelector(".btnAct").removeAttribute("hidden");
          element.parentNode.querySelector(".btnBon").removeAttribute("hidden");
          break;
       case "act":
          element.parentNode.parentNode.style.borderColor = "#0c3ce1";
-         element.setAttribute("hidden", "");
+         if(!element.classList.contains("btnEdit"))
+            element.setAttribute("hidden", "");
          element.parentNode.querySelector(".btnBon").removeAttribute("hidden");
          element.parentNode.querySelector(".btnSup").removeAttribute("hidden");
          break;
