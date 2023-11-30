@@ -1,0 +1,129 @@
+#mainField {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mainFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#workWithTask {
+    display: flex;
+}
+
+#ajoutTask {
+    display: flex;
+    align-items: start;
+    padding: 8px;
+    border: 2px solid #0c3ce1;
+    border-radius: 10px;
+}
+
+#ajoutTaskBtn {
+    font-size: 50px;
+    color: white;
+    line-height: 40px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 10px;
+}
+
+#ajoutTaskBtn:hover {
+    background-color: #024fec;
+}
+
+#ajoutTextTask {
+    font-size: 26px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+#typeTask {
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+    border: none;
+    background-color: #024fec;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.textTask {
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+#displayTask {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.task {
+    border: 2px solid #0c3ce1;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#separator {
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn {
+    border: none;
+    margin-left: 5px;
+    font-size: 18px;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.btnBon {
+    background-color: #9ae08e;
+}
+
+.btnBon:hover {
+    background-color: #22d501;
+}
+
+.btnEdit {
+    background-color: #d5c080;
+}
+
+.btnEdit:hover {
+    background-color: #ffbe00;
+}
+
+.btnSup {
+    background-color: #d3d3d3;
+}
+
+.btnSup:hover {
+    background-color: #ababab;
+}
+
+.btnAct {
+    background-color: #7991e3;
+}
+
+.btnAct:hover {
+    background-color: #0c3ce1;
+}
+
+.separator {
+    display: flex;
+    align-items: flex-start;
+    border: none;
+}

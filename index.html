@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainField">
+        <div id="mainFrame">
+            <div id="workWithTask">
+                <div id="ajoutTask">
+                    <textarea id="ajoutTextTask" rows="1" cols="31"></textarea>
+                    <button id="ajoutTaskBtn">+</button>
+                </div>
+
+                <div id="selTypeTask">
+                    <select name="" id="typeTask">
+                        <option value="act">Actuelle</option>
+                        <option value="ret">Retiré</option>
+                        <option value="bon">Passé</option>
+                    </select>
+                </div>               
+            </div>
+            <div id="displayTask">
+                <div class="task" id="ghost" edit="nope" hidden>
+                    <div class="separator">
+                        <textarea class="textTask" rows="1" cols="31" readonly>ghost</textarea>
+                        <button class="btn btnBon">✔️</button>
+                        <button class="btn btnEdit" >🖊️</button>
+                        <button class="btn btnSup">❌</button>
+                        <button class="btn btnAct" hidden="">💬</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
